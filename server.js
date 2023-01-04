@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 var static = require('node-static');
 
-var file = new(static.Server)("./dist/index.html");
+var file = new(static.Server)("./index.html");
 app.get("/", (req, res) => {
     file.serve(req, res); 
 })
