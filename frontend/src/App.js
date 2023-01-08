@@ -1,5 +1,7 @@
 import TitleCard from "./titleCard.js"
 import "./index.css"
+import Taskbar from "./taskbar.js";
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 
 function App() {
   const bodyStyle = {
@@ -8,6 +10,9 @@ function App() {
   }
   return (
     <div style={bodyStyle}>
+      <BrowserRouter>
+        <Taskbar />
+      </BrowserRouter>
       <TitleCard id="mainDiv"/>
     </div>
   );

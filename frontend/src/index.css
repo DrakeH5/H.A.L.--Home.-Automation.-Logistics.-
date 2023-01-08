@@ -8,6 +8,7 @@ body {
   animation: animateBg 11s linear infinite;
   background: linear-gradient(0deg,#0081d1,#64aad1,#38a6c2,#0081d1,#64aad1);
   background-size: 100% 400%;
+  overflow: hidden;
 }
 
 code {
