@@ -5,6 +5,10 @@ const app = express();
 app.get("/", (req, res) => {
     res.json("Hello World")
 })
+
+app.get("/getWakeUpTimes", (req, res) => {
+    res.json(wakeUpAlarmTimes)
+})
  
 app.listen(1001, () => { console.log("Server started on port 1001") })
 
