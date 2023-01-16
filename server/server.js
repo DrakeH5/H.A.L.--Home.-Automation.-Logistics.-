@@ -13,7 +13,7 @@ app.get("/getWakeUpTimes", (req, res) => {
 app.listen(1001, () => { console.log("Server started on port 1001") })
 
 
-var wakeUpAlarmTimes = [[7,00],[7,00],[7,00],[7,00],[7,00],[7,00],[10,00],[10,00]]
+var wakeUpAlarmTimes = [[7,00],[0,00],[7,00],[12,00],[7,00],[24,00],[10,00],[10,00]]
 setInterval(() => {
     var date = new Date();
     let day = date.getDay()
